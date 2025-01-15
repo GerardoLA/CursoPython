@@ -25,7 +25,7 @@ print(type(name))
 # tipado fuerte: Python no realiza conversiones de tipo automáticas.
 # print(10 + "2") # TypeError: unsupported operand type(s) for +: 'int' and 'str'
 
-# f-string (literak de cadeba de formato)
+# f-string (literal de cadeba de formato)
 # desde python 3.6
 print(f"Hola {my_name}, tengo {age - 5} años")
 
