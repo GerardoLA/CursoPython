@@ -7,6 +7,7 @@ nombre = input("¿Cómo te llamas?\n")
 print(f"¡Hola {nombre}, encantado de conocerte!")
 
 age = input("¿Cuántos años tienes?\n")
+age = int(age)
 print(type(age))
 print(f"¡Vaya, {nombre}! ¡No pareces de {age} años!")
 
