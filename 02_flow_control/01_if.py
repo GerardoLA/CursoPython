@@ -97,3 +97,31 @@ edad = 17
 mensaje = "Eres mayor de edad" if edad >= 18 else "Eres menor de edad"
 print(mensaje)
 
+############################################
+# Ejercicios
+############################################
+
+# Ejercicio 1: Determinar el mayor de dos números
+# Pide al usuario que introduzca dos números y muestra un mensaje
+# indicando cuál de los dos es mayor o si son iguales.
+
+""" numero1 , numero2 = input("Introduce dos números separados por un espacio: ").split()
+numero1, numero2 = int(numero1), int(numero2)
+if numero1 == numero2:
+    print("Los números son iguales")
+elif numero1 > numero2:
+    print(f"{numero1} es mayor que {numero2}")
+else:
+    print(f"{numero2} es mayor que {numero1}") """
+
+numero1 = input("Introduce el primer número: ")
+numero1 = float(numero1)
+numero2 = input("Introduce el segundo número: ")
+numero2 = float(numero2)
+
+if numero1 == numero2:
+    print("los números son iguales")
+elif numero1 < numero2:
+    print(f"{numero2} es mayor que {numero1}")
+else:
+    print(f"{numero2} es mayor que {numero1}")
