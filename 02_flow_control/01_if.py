@@ -125,3 +125,24 @@ elif numero1 < numero2:
     print(f"{numero2} es mayor que {numero1}")
 else:
     print(f"{numero2} es mayor que {numero1}")
+
+# Ejercicio 2: Calculadora simple
+# Pide al usuario dos números y una operación (+, -, *, /)
+# Realiza la operación y muestra el resultado.
+
+numero1 = input("introduce el primer número:")
+numero1 = float(numero1)
+numero2 = input("introduce el segundo número:")
+numero2 = float(numero2)
+operacion = input("introduce el signo de la operacion, '+' si quieres sumar, '-' si quieres restar, '*' si quieres multiplicar y '/' si quieres dividir: ")
+resultado = 0
+if operacion == "+":
+    print ("resultado = ",numero1 + numero2)
+elif operacion == "-":
+    print ("El resutado de la resta es: ",numero1 - numero2)
+elif operacion == "*":
+    print("El resultdo de la multiplicaión es: ",numero1 * numero2)
+elif operacion == "/":
+    print("El resultado de la division es: ",numero1 / numero2)
+else:
+    print("Operación no valida")
