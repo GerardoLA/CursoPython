@@ -71,3 +71,12 @@ mensaje = ["C", "o", "d", "i", "g", "o", " ", "s", "e", "c", "r", "e", "t", "o"]
 print("\nEjercicio1: El mensaje secreto")
 #mensaje_secreto = mensaje[7:]
 print("".join(mensaje[7:]))
+
+# Ejercicio 2 - Intercambio de posiciones
+# Dada la siguiente lista:
+# numeros  [10, 20, 30, 40, 50]
+# Intercambia la primera y la última posición utilizando solo asignación por índice.
+print("\nEjercicio 2 - Intercambio de posiciones")
+numeros = [10, 20, 30, 40, 50]
+numeros[0], numeros[-1] = numeros [-1], numeros[0]
+print(numeros)
