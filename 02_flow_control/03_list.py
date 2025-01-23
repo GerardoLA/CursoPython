@@ -63,6 +63,8 @@ print(lista1) # [1, 2, 3, 4, 5, 6, 7, 8, 9]
 len(lista1) # 9
 print("Longitud de la lista es: ", len(lista1))
 
+######################################################
+
 ## Ejercicio 1 El mensaje secreto
 # Dada la siguiente lista:
 # mensaje = ["C", "o", "d", "i", "g", "o", " ", "s", "e", "c", "r", "e", "t", "o"]
@@ -80,3 +82,38 @@ print("\nEjercicio 2 - Intercambio de posiciones")
 numeros = [10, 20, 30, 40, 50]
 numeros[0], numeros[-1] = numeros [-1], numeros[0]
 print(numeros)
+
+# Ejercicio 3 - El sandwich de listas
+# Dadas las siguientes listas:
+# pan = ["pan de arriba"]
+# ingredientes = ["lechuga", "tomate", "queso", "jamon"]
+# pan_abajo = ["pan de abajo"]
+# Crea una nueva lista llamada sandwich que contenga el pan de arriba, los ingredientes y el pan de abajo, en ese orden.
+print("\nEjercicio 3 - El sandwich de listas")
+pan = ["pan de arriba"]
+ingredientes = ["Lechuga", "tomate", "queso", "huevo", "jamon"]
+pan_abajo = ["pan de abajo"]
+sandwich = print(pan + ingredientes + pan_abajo)
+
+# Ejercicio 4 - Duplicando la lista
+# Dada la siguiente lista:
+# lista = [1, 2, 3]
+# Crea una nueva lista que contenga los elementos de la lista original duplicados.
+print("\nEjercicio 4 - Duplicando la lista")
+lista = [1, 2, 3]
+duplicada = print(lista * 2)
+
+# Ejercicio 5 - Extrayendo el centro
+# Dada una lista con un número impar de elementos, extrae el elemento central, utilizando slicing.
+print("\nEjercicio 5 - Extrayendo el centro")
+lista = [1, 2, 3, 4, 5]
+print("El elemento central es ",lista[len(lista)//2])
+
+# Ejercicio 6 - REversa parcial
+# Dada una lista, invierte solo la primeera mitad de la lista, utilizando slicing y concatenación.
+# Ejemplo: lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] -> [5, 4, 3, 2, 1, 6, 7, 8, 9, 10]
+print("\nEjercicio 6 - Reversa parcial")
+lista = [1, 2, 3, 4, 5, 6]
+mitad = len(lista)//2
+lista_invertida = lista[:mitad][::-1] + lista[mitad:]
+print(lista_invertida)
