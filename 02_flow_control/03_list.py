@@ -117,3 +117,4 @@ lista = [1, 2, 3, 4, 5, 6]
 mitad = len(lista)//2
 lista_invertida = lista[:mitad][::-1] + lista[mitad:]
 print(lista_invertida)
+

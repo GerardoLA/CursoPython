@@ -59,3 +59,50 @@ frutas.sort(key=str.lower) # ordena las cadenas de texto ignorando mayúsculas y
 print(frutas) # ['Fresa', 'manzana', 'Naranja', 'pera']     
 
 # Más cositas utiles
+animals = ['gato', 'perro', 'mono', 'elefante', 'gato']
+print(len(animals)) # tamaño de la lista -> 5
+print(animals.count('gato')) # cuantas veces aparece un elemento en la lista -> 2
+print('gato' in animals) # Comprueba si hay un 'gato' en la lista -> True
+print('raton' in animals) # Comprueba si hay un 'raton' en la lista -> False
+
+###
+# EJERCICIOS
+# Usa siempre que puedas los métodos que has aprendido.
+###
+
+# Ejercicio 1: Añadir y modificar elementos
+# Crea una lista con los números del 1 al 15.
+# Añade el número 6 al final usando append().
+# Inserta el número 10 en la posición 2 usando insert().
+# Modifica el primer elemento de la lista para que sea 0.
+
+print("\nEjercicio 1: Añadir y modificar elementos")
+lista = list(range(1,16))
+print(lista)
+lista.append(6)
+print(lista)
+lista.insert(2,10)
+print(lista)
+lista[0]= 0
+print(lista)
+
+# Ejercicio 2: Combinar y limpiar listas
+# Crea dos listas:
+# lista_a = [1, 2, 3]
+# lista_b = [4, 5, 6, 1, 2]
+# Extiende lista_a con lista_b usando extend().
+# Elimina la primera aparición del número 1 en la lista_a usando remove()
+# Elimina el elemento en el indice 3 de la lista_a usando pop(). Imprime el eliminado.
+# Limpia completamente lista_b usando clear().
+
+print("\nEjercicio 2 Combina y limpiar las listas")
+lista_a = [1, 2, 3]
+lista_b = [4, 5, 6, 1, 2]
+lista_a.extend(lista_b)
+print(lista_a)
+lista_a.remove(1)
+print(lista_a)
+eliminado = lista_a.pop(3)
+print("El elemento eliminado es: ",eliminado)
+lista_b.clear()
+print(lista_b)
