@@ -112,6 +112,57 @@ print(lista_b)
 # Utiliza slicing y del para eliminar los elementos desde el índice 2 hasta el 5 (sin incluir el 5).
 # Imprime la lista resultante.
 
+print("\nEjercicio 3: Slicing y eliminación con del")
 numeros = list(range(1,11))
 del numeros[2:5]
 print(numeros)
+
+# Ejercicio 4: Ordenar y contar
+# Crea una lista con los siguientes números: [5, 2, 8, 1, 9, 4, 2].
+# Ordena la lista de forma ascendente usando sort().
+# Cuenta cuantas veces aparece el número 2 en la lista usando count().
+# Comprueba si el número 7 está en la lista usando in.
+
+print("\nEjercicio 4: Ordenar y contar")
+numeros = [5, 2, 8, 1, 9, 4, 2]
+numeros.sort()
+print(numeros)
+print("El número 2 aparece ", numeros.count(2), "veces en la lista")
+if 7 in numeros:
+    print("El 7 si está en la lista")
+else:
+    print("7 no está en la lista.")
+
+# Ejercicio 5: Copia vs. Referencia
+# Crea una lista llamada original con los números[1, 2, 3]
+# Crea una copia de la lista original llamada copia_1 usando slicing.
+# Crea otra copia llamada copia_2 usando copy().
+# Crea una referencia a la lista original llamada referencia.
+# Modifica el primer elemento de la lista referencia a 10.
+# Imprime las cuatro lista(original, copia_1, copia_2, referencia) y observa los cambios.
+
+print("\nEjercicio 5: Copia vs. referencia")
+original = [1, 2, 3]
+copia_1 = original[:]
+print("La lista original es: ",original)
+print("La copia_1 es: ",copia_1)
+copia_2 = original.copy()
+print("La copia_2 hecha con copy() es: ",copia_2)
+referencia = original
+print("Referencia es: ",referencia)
+referencia[0]=10
+print("Referencia modificaodo es:",referencia)
+
+print(f"Original es: {original}")
+print(f"copia_1 es: {copia_1}")
+print(f"copia_2 es: {copia_2}")
+print(f"Referencia es: {referencia}")
+
+# Ejercicio 6: Ordenar strings sin diferenciar mayúsculas y minúsculas.
+# Crea una lista con las siguientes cadenas: ["Manzana", "pera", "Banana", "naranja"].
+# Ordena la lista sin diferenciar entre mayúsculas y minúsculas.
+
+print("\nEjercicio 6")
+lista = ["Manzana", "pera", "Banana", "naranja"]
+lista.sort(key=str.lower)
+print(lista)
