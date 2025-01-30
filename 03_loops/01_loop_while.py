@@ -110,6 +110,16 @@ print(factorial,f"--> El factorial de {num_original} es {factorial}")
 # Si la contraseña es válida, imprime "Contraseña válida".
 print("\nEjercicio 4:")
 
+password = ""
+
+while len(password) < 8:
+    password = input("Introduce una contraseina de al menos 8 caracteres: ")
+    if len(password) < 8:
+        print(f"Try again, tiene que ser al menos de 8, has metido {len( password)}!!")
+print("Ok! Password correcto")
+
+
+
 # Ejercicio 5: Tabla de multiplicar
 # Pide al usuario que introduzca un número.
 # Imprime la tabla de multiplicar de ese número (del 1 al 10) usando un bucle while.
