@@ -1,6 +1,6 @@
 """
-Dado unarray de numeros y un numero goal, encuentttra los dos primeros nombres del array que sumen el numerpo goal y devuelve sus indices
-Si no exite tal combinacion, devuelve
+Dado un array de numeros y un numero goal, encuentra los dos primeros nombres del array que sumen el número goal y devuelve sus índices
+Si no exite tal combinacion, devuelve None
 nums =  [4, 5, 6, 2]
 goal =  8
 
@@ -14,6 +14,8 @@ find_first_sum(nums,goal)
 #           if nums[i] + nums[j] == goal:
 #              return[i, j] 
 #     return None  # no se encontró ninguna combinación
+
+# Se puede hacer mejor con un diccionario:
 
 def find_first_sum(nums, goal):
     seen = {} # diccionario para guardar el número y su índice

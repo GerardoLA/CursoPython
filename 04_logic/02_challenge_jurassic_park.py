@@ -6,13 +6,13 @@
 
 # Objetivo: 
 # Escribe una función en Python que reciba una lista de números enteros y devuelva la suma total de los que pretencen a los dinosaurios carnivos.
-# es decir la sumam de los pares
+# (es decir la suma de los pares en la lista)
 
 # Para ver si un número es Par
 # siempre usamos el módulo %
 # nos da el resto de la división: eggs % 2 == 2
 
-def count_carnivore_dinosar_eggs(egg_list) -> int:
+def count_carnivore_dinosar_eggs(egg_list) -> int: #con la flecha te dice lo que devuelve la funcion, en este caso int
     """ Esta función recibe una lista de números enteros que representan la cantidad de huevos que han puesto diferentes dinosaurios en el parque jurásico y los de número par que son       carnivoros. Devuelve un número con la suma de todos los huevos de carnívoros. """
     
     total_carnivore_eggs = 0
@@ -22,7 +22,7 @@ def count_carnivore_dinosar_eggs(egg_list) -> int:
             total_carnivore_eggs += eggs
     return total_carnivore_eggs
 
-# esta forma es más corta:
+# esta forma es más corta, por ponerlo todo en una línea no tiene por qué ser mejor, ni más legible:
 # total_carnivore_eggs = sum(filter(lambda x: x % 2 == 0, egg_list))
 
 egg_list = [3, 4 , 7, 5, 8]

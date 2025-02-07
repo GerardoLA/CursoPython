@@ -26,12 +26,13 @@ def check_is_balanced(text):
 
     print(f"count_r: {count_r} count_j: {count_j}")
 
-      # if count_r == count_j:
-  #   return True
-  # else:
-  #   return False
+    # if count_r == count_j:
+    #     return True
+    # else:
+    #     return False
 
-    return count_r == count_j
+    return count_r == count_j #Al devolver la condición es lo mismo que el if anterior, y se evita hacer trabajo demás.
+
 print(check_is_balanced("RRJJ"))
 print(check_is_balanced("RRRRJJ"))
 print(check_is_balanced("RRJJJJJJ"))
