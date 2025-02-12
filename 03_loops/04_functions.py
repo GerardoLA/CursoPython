@@ -82,48 +82,81 @@ def nombre_de_la_funcion(parametro, parametro2, ...):
 # que hemos visto hasta ahora
 
 # Ejercicio 1: Imprime los números del 10 al 1 usando while (modifico para que sea el que el usuario introduzca)
-def imprimir_cuenta_atras():
-    """Imprime la cuenta atrás desde el número que introduzca el usuario hasta el 1"""
-    numero = int(input("introduce  un número: "))
-    print(numero)
-    while numero > 1:
-        numero -= 1
-        print (numero) 
-imprimir_cuenta_atras()  
+# def imprimir_cuenta_atras():
+#     """Imprime la cuenta atrás desde el número que introduzca el usuario hasta el 1"""
+#     numero = int(input("introduce  un número: "))
+#     print(numero)
+#     while numero > 1:
+#         numero -= 1
+#         print (numero) 
+# imprimir_cuenta_atras()  
 
-# Ejercicio 2: Suma de números pares, usando while, de los números que haya desde el 1 al número que introduzca el usuario
-def suma_pares():
-    """Suma de números pares, desde el 0 hasta el número introducido por el usuario"""
-    numero = int(input("introduce un número: "))
-    num = 0
-    suma = 0
-    while(num < numero):
-        num += 1
-        if num % 2 == 0:
-            suma += num
-    print(suma)
-suma_pares()
+# # Ejercicio 2: Suma de números pares, usando while, de los números que haya desde el 1 al número que introduzca el usuario
+# def suma_pares():
+#     """Suma de números pares, desde el 0 hasta el número introducido por el usuario"""
+#     numero = int(input("introduce un número: "))
+#     num = 0
+#     suma = 0
+#     while(num < numero):
+#         num += 1
+#         if num % 2 == 0:
+#             suma += num
+#     print(suma)
+# suma_pares()
 
-# Ejercicio 3: Factorial de un número , usando while, de un número positivo introducido por el usuario
-def factorial():
-    """Calcula el factorial del número que introduzca el usuario"""
-    num = int(input("introduce un número: "))
-    print(f"  {num}")
-    fact = 1    
-    while num > 1:
-        fact *= num 
-        num -= 1
-        print("X",num)
-    print("-------")
-    print(fact)
-    print(f"El factorial de {num} es {fact}")
-factorial()
+# # Ejercicio 3: Factorial de un número , usando while, de un número positivo introducido por el usuario
+# def factorial():
+#     """Calcula el factorial del número que introduzca el usuario"""
+#     num = int(input("introduce un número: "))
+#     print(f"  {num}")
+#     fact = 1    
+#     while num > 1:
+#         fact *= num 
+#         num -= 1
+#         print("X",num)
+#     print("-------")
+#     print(fact)
+#     print(f"El factorial de {num} es {fact}")
+# factorial()
 
-# Ejercicio 4 = Validación de contraseña
-def valida_password():
-    """Valida que el password introducido sea al menos de 8 caracteres"""
-    while len(input("Introduce tu password: ")) < 8:
-        print("El pasword debr ser de al menos 8 caracteres")
-    print("ok")
-valida_password()
+# # Ejercicio 4 = Validación de contraseña
+# def valida_password():
+#     """Valida que el password introducido sea al menos de 8 caracteres"""
+#     while len(input("Introduce tu password: ")) < 8:
+#         print("El password debr ser de al menos 8 caracteres")
+#     print("ok")
+# valida_password()
+
+# Ejercicio 5 Tabla de multiplicar
+def tabla_multiplicar():
+    
+    num =int(input(f"Introduce un numero del 1 al 10: "))
+    while num <1 or num > 10:
+        num =int(input(f"Introduce un numero del 1 al 10: "))
+    i=10
+    while i >= 0:
+        print(f"{num} X {i} = {num*i}")
+        i -= 1
+            
+tabla_multiplicar()
+
+# Ejercicio 6 
+def numeros_primos():
+    num = int(input("Introduce un número: "))
+    for num in range(2,num):
+        if num > 1:
+            cont=0
+            i=2
+            while i<num and cont==0:
+                resto=num%i
+                if resto == 0:
+                    cont += 1
+                i+=1
+            if cont ==0:
+                print(num)
+
+numeros_primos()
+
+
+
 
