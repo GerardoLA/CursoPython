@@ -129,7 +129,7 @@ def nombre_de_la_funcion(parametro, parametro2, ...):
 
 # Ejercicio 5 Tabla de multiplicar
 def tabla_multiplicar():
-    
+    """Hace la tabla del número que introduzca el usuario"""
     num =int(input(f"Introduce un numero del 1 al 10: "))
     while num <1 or num > 10:
         num =int(input(f"Introduce un numero del 1 al 10: "))
@@ -142,6 +142,7 @@ tabla_multiplicar()
 
 # Ejercicio 6 
 def numeros_primos():
+    """Muestra los numeros primos menores del que introduzca el usuario"""
     num = int(input("Introduce un número: "))
     for num in range(2,num):
         if num > 1:
@@ -156,6 +157,14 @@ def numeros_primos():
                 print(num)
 
 numeros_primos()
+
+# Ejercicio 7 
+def numeros_pares():
+    """Muestra los numeros pares menores del que introduzca el usuario"""
+    pares = [num for num in range(2,int(input("introduce un numero: ")))if num % 2 == 0]
+    print(pares)
+
+numeros_pares()
 
 
 
