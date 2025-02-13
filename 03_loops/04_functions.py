@@ -128,43 +128,79 @@ def nombre_de_la_funcion(parametro, parametro2, ...):
 # valida_password()
 
 # Ejercicio 5 Tabla de multiplicar
-def tabla_multiplicar():
-    """Hace la tabla del número que introduzca el usuario"""
-    num =int(input(f"Introduce un numero del 1 al 10: "))
-    while num <1 or num > 10:
-        num =int(input(f"Introduce un numero del 1 al 10: "))
-    i=10
-    while i >= 0:
-        print(f"{num} X {i} = {num*i}")
-        i -= 1
+# print("\nEjercicio5")
+# def tabla_multiplicar():
+#     """Hace la tabla del número que introduzca el usuario"""
+#     num =int(input(f"Introduce un numero del 1 al 10: "))
+#     while num <1 or num > 10:
+#         num =int(input(f"Introduce un numero del 1 al 10: "))
+#     i=10
+#     while i >= 0:
+#         print(f"{num} X {i} = {num*i}")
+#         i -= 1
             
-tabla_multiplicar()
+# tabla_multiplicar()
 
-# Ejercicio 6 
-def numeros_primos():
-    """Muestra los numeros primos menores del que introduzca el usuario"""
-    num = int(input("Introduce un número: "))
-    for num in range(2,num):
-        if num > 1:
-            cont=0
-            i=2
-            while i<num and cont==0:
-                resto=num%i
-                if resto == 0:
-                    cont += 1
-                i+=1
-            if cont ==0:
-                print(num)
+# # Ejercicio 6
+# print("\nEjercicio6") 
+# def numeros_primos():
+#     """Muestra los numeros primos menores del que introduzca el usuario"""
+#     num = int(input("Introduce un número: "))
+#     for num in range(2,num):
+#         if num > 1:
+#             cont=0
+#             i=2
+#             while i<num and cont==0:
+#                 resto=num%i
+#                 if resto == 0:
+#                     cont += 1
+#                 i+=1
+#             if cont ==0:
+#                 print(num)
 
-numeros_primos()
+# numeros_primos()
 
-# Ejercicio 7 
-def numeros_pares():
-    """Muestra los numeros pares menores del que introduzca el usuario"""
-    pares = [num for num in range(2,int(input("introduce un numero: ")))if num % 2 == 0]
-    print(pares)
+# # Ejercicio 7 
+# print("\nEjercicio7")
+# def numeros_pares():
+#     """Muestra los numeros pares menores del que introduzca el usuario"""
+#     pares = [num for num in range(2,int(input("introduce un numero: ")))if num % 2 == 0]
+#     print(pares)
 
-numeros_pares()
+# numeros_pares()
+
+# Ejercicio 8
+def media():
+    array = []
+    print("Introduce los números uno a uno. Presiona Enter sin introducir nada para terminar:")
+
+    while True:
+        entrada = input("Introduce un número: ")
+        if entrada == "":
+            break
+        try:
+            num = int(entrada)
+            array.append(num)
+        except ValueError:
+            print("Por favor introduce un número válido.")
+    
+    if not array:
+        print("No se introdujeron números.")
+        return
+
+    print(f"El array resultante es {array}")
+    
+    suma = 0
+    for num in array:
+        suma += num
+    media = suma / len(array)
+    print(f"La media de {array} es {media}")
+
+media()
+
+
+                
+
 
 
 
