@@ -198,38 +198,91 @@ def nombre_de_la_funcion(parametro, parametro2, ...):
 
 # media()
 
-print("\nFunción 9 ejercicio 3 for")
-def maximo(lista):
-    """Encontrar el número mayor de una lista dada"""
-    mayor = lista[0]
-    for num in lista:
-        if num > mayor:
-            mayor = num
-    print(f"El número mayor es {mayor}") 
+# print("\nFunción 9 ejercicio 3 for")
+# def maximo(lista):
+#     """Encontrar el número mayor de una lista dada"""
+#     mayor = lista[0]
+#     for num in lista:
+#         if num > mayor:
+#             mayor = num
+#     print(f"El número mayor es {mayor}") 
 
-maximo([90, 45, 10, 44, 127, 38, 9, 91, 4])
+# maximo([90, 45, 10, 44, 127, 38, 9, 91, 4])
 
-print("\nFunción 10 -  Ejercicio 4 for")
-def cadenaLong(cadena):
-    """Filtra cadena porlonfitug mayor de 5"""
-    cadena2=[]
-    for pal in cadena:
-        if len(pal) > 5:
-            cadena2.append(pal)
-    print(cadena2)
-cadenaLong(["ksdjhfkj", "arrai", "hondarbi", "sdf", "goazenMaink", "uno", "bi"])
+# print("\nFunción 10 -  Ejercicio 4 for")
+# def cadenaLong(cadena):
+#     """Filtra cadena porlonfitug mayor de 5"""
+#     cadena2=[]
+#     for pal in cadena:
+#         if len(pal) > 5:
+#             cadena2.append(pal)
+#     print(cadena2)
+# cadenaLong(["ksdjhfkj", "arrai", "hondarbi", "sdf", "goazenMaink", "uno", "bi"])
 
-print("\nFunción 11 del Ejercicio 4 for")
-def contPalabras(palabras):
-    letra = input("Introduce una letra: ").lower()
-    contador = 0
-    for palabra in palabras:
-        if palabra.lower().startswith(letra):
-            contador += 1
-    print(f"Hay {contador} palabras que empiecen por {letra}")
+# print("\nFunción 11 del Ejercicio 4 for")
+# def contPalabras(palabras):
+#     letra = input("Introduce una letra: ").lower()
+#     contador = 0
+#     for palabra in palabras:
+#         if palabra.lower().startswith(letra):
+#             contador += 1
+#     print(f"Hay {contador} palabras que empiecen por {letra}")
 
-  
-contPalabras(["house", "tree", "sun", "Macallan","elephant", "moon", "car"])
+# contPalabras(["house", "tree", "sun", "Macallan","elephant", "moon", "car"])
 
+# print("\nfunción 12 - ejercicio 1 range")
+# def forRange10():
+#     """Muestra los números del 1 al 10"""
+#     for num in range(1,11):
+#         print(num)
+# forRange10()
 
+# print("\nfunción 13 - ejercicio 2 range")
+# def nones():
+#     """Muestra los impares del 1 al número que introduzca el usuario"""
+#     lista=[]
+#     for num in range(1,int(input("introduce hasta que número quieres saber los impares: "))):
+#         if num % 2 != 0:
+#             lista.append(num)
+#     print(f"los impares son: {lista}")
+# nones()
 
+# print("\Función 14 - Ejercicio 3 range")
+# def multiplos():
+#     """Múltiplos de 5 del 5 al 50 ambos inclusive"""
+#     lista = []
+#     for num in range(5, 51):
+#         if num % 5 == 0:
+#             lista.append(num)
+#     print(lista)
+    
+# multiplos()
+
+# print("\nFunción 15 - Ejercicio 4 range & for")
+
+# def cuentAtras():
+#     lista = []
+#     for num in range(10, 0, -1):
+#         lista.append(num)
+#     print(lista)
+        
+# cuentAtras()
+
+# print("\nFunción 16 - Ejercicio 5 range")
+
+# def sumRange():
+#     suma = 0
+#     rangeX = int(input("Introduce el númerpo inicial del rango: "))
+#     rangeY = int(input("introduce el límite del rango: "))
+#     for num in range(rangeX,rangeY+1):
+#         suma += num
+#     print(f"La suma de los números entre {rangeX} y {rangeY} es {suma}")
+# sumRange()
+
+print("\nFunción 17 - Ejercicio 6")
+def tablaMult():
+    numero = int(input("Introduce un número: "))
+    for num in range(1,11):
+        print(f"{numero} X {num} = {numero*num}")
+
+tablaMult()
