@@ -169,39 +169,67 @@ def nombre_de_la_funcion(parametro, parametro2, ...):
 
 # numeros_pares()
 
-# Ejercicio 8
-def media():
-    array = []
-    print("Introduce los números uno a uno. Presiona Enter sin introducir nada para terminar:")
+# print("\nFunción 8 del ejercicio 2 for") 
+# def media():
+#     array = []
+#     print("Introduce los números uno a uno. Presiona Enter sin introducir nada para terminar:")
 
-    while True:
-        entrada = input("Introduce un número: ")
-        if entrada == "":
-            break
-        try:
-            num = int(entrada)
-            array.append(num)
-        except ValueError:
-            print("Por favor introduce un número válido.")
+#     while True:
+#         entrada = input("Introduce un número: ")
+#         if entrada == "":
+#             break
+#         try:
+#             num = int(entrada)
+#             array.append(num)
+#         except ValueError:
+#             print("Por favor introduce un número válido.")
     
-    if not array:
-        print("No se introdujeron números.")
-        return
+#     if not array:
+#         print("No se introdujeron números.")
+#         return
 
-    print(f"El array resultante es {array}")
+#     print(f"El array resultante es {array}")
     
-    suma = 0
-    for num in array:
-        suma += num
-    media = suma / len(array)
-    print(f"La media de {array} es {media}")
+#     suma = 0
+#     for num in array:
+#         suma += num
+#     media = suma / len(array)
+#     print(f"La media de {array} es {media}")
 
-media()
+# media()
 
+print("\nFunción 9 ejercicio 3 for")
+def maximo(lista):
+    """Encontrar el número mayor de una lista dada"""
+    mayor = lista[0]
+    for num in lista:
+        if num > mayor:
+            mayor = num
+    print(f"El número mayor es {mayor}") 
 
-                
+maximo([90, 45, 10, 44, 127, 38, 9, 91, 4])
 
+print("\nFunción 10 -  Ejercicio 4 for")
+def cadenaLong(cadena):
+    """Filtra cadena porlonfitug mayor de 5"""
+    cadena2=[]
+    for pal in cadena:
+        if len(pal) > 5:
+            cadena2.append(pal)
+    print(cadena2)
+cadenaLong(["ksdjhfkj", "arrai", "hondarbi", "sdf", "goazenMaink", "uno", "bi"])
 
+print("\nFunción 11 del Ejercicio 4 for")
+def contPalabras(palabras):
+    letra = input("Introduce una letra: ").lower()
+    contador = 0
+    for palabra in palabras:
+        if palabra.lower().startswith(letra):
+            contador += 1
+    print(f"Hay {contador} palabras que empiecen por {letra}")
+
+  
+contPalabras(["house", "tree", "sun", "Macallan","elephant", "moon", "car"])
 
 
 
