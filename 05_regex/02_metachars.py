@@ -79,8 +79,41 @@ valid = re.search(pattern, phone)
 if valid: print("Es un número de teléfono valido")
 else: print("No es un número de teléfono válido")
 
+# $: Coincide con el final de una cadena
+text = "Hola mundo."
+pattern = r"mundo$"
+ 
+valid = re.search(pattern, text)
+
+if valid: print("La cadena es válida")
+else: print("La cadena no es valida")
+
 
 
 #EJERCICIO
 # Valida que un correo sea de gmail
 text = "miduga@gmail.com"
+pattern = r"@gmail.com"
+
+valid = re.search(pattern, text)
+if valid:("El correo es gmail válido")
+else:("No es un correo gmail válido")
+
+#EJERCICIO
+# Tenemos una lista de archivos, necesitamos saber los nombres de los ficheros con extensión .txt
+files = "file1.txt file2.pdf midu-of.wep secret.txt"
+pattern = r"\b\w+\.txt\b"
+
+found = re.findall(pattern,files)
+print(found)
+# \b: Coincide con el principio o final de una palabra
+text = "casa casada cosa cosas casado casa"
+patter = r"\bc.sa\b"
+found = re.findall(patter, text)
+print(found)
+
+# |: Coincidir con una opción u otra
+fruits = "platano, piña, manzana, aguacate, palta, pera, aguacate, aguacate"
+pattern = r"palta|aguacate|p..a|\b\w{7\b}"
+found = re.findall(pattern,fruits)
+print(found)
