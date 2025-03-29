@@ -1,23 +1,31 @@
 # Trabajando con fechas y horas en Python
 
 from datetime import datetime, timedelta
+locale.setlocale(locale.LC_TIME, 'Spanish_Spain.1252')
+
+# 1. Obtener la fecha y hora actual
 
 now = datetime.now()
 print(f"Fecha y hora actual: {now}")
 
-# Crear una fecha y hora especifica
+# 2. Crear una fecha y hora especifica
 specific_date = datetime(2025, 2, 12, 15, 30, 0)
 print(f"Fecha y hora especifica: {specific_date}")
 
-# Formatear fechas
+# 3. Formatear fechas
 # método strftime() para formatear fechas
 # pasarle el objeto datetime y el formato especiufico
 # Formato:
+import locale
 
-format_date = now.strftime("%d/%m/%y %H:%M:%S")
+
+
+locale.setlocale(locale.LC_TIME, 'es_ES.UTF-8')
+
+format_date = now.strftime("%A %B %Y %H:%M:%S")
 print(f"Fecha formateada: {format_date}")
 
-# Operaciones con fechas (sumar/restar días, minutos, horas, meses)
+# 4. Operaciones con fechas (sumar/restar días, minutos, horas, meses)
 yesterday = datetime.now() - timedelta(days=1)
 print(f"Ayer: {yesterday}")
 
@@ -34,4 +42,8 @@ print(year)
 month = now.month
 print(month)
 
-# 6.
+# 6. Calcular la diferencia entre 2 fechas
+date1 = datetime.now()
+date2 = datetime(2025, 2, 12, 15, 30, 0)
+difference = date1 - date2
+print(f"La diferencia entre {date1} y  {date2}  es: {difference}")
