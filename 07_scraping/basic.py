@@ -8,7 +8,7 @@ response = requests.get(url)
 if response.status_code == 200:
     print('La petición fue exitosa')
     html = response.text
-    # print(html)
+    print(html)
 
     # regular expresion para encontrar el precio
     price_pattern = r'<span class="rc-prices-fullprice">(.*?)</span>'
@@ -16,4 +16,11 @@ if response.status_code == 200:
 
     if match:
         print(f"El precio es: {match.group(1)}")
+
+# get the title if the patter is found
+    title_pattern = r'<title>(.*?)</title>'
+    match = re.search(title_pattern, html)
+
+    if match:
+        print(f"El título de la wes es {match.group(1)}")
 
